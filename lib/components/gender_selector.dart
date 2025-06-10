@@ -28,7 +28,7 @@ class _GenderSelectorState extends State<GenderSelector> {
               padding: const EdgeInsets.only(
                 left: 16,
                 top: 16,
-                bottom: 16,
+                bottom: 8,
                 right: 8,
               ),
               child: Container(
@@ -37,7 +37,7 @@ class _GenderSelectorState extends State<GenderSelector> {
                       selectedGender == "Hombre"
                           ? AppColors.backgroundComponentSelected
                           : AppColors.backgroundComponent,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(16),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(12.0),
@@ -65,7 +65,7 @@ class _GenderSelectorState extends State<GenderSelector> {
               padding: const EdgeInsets.only(
                 left: 8,
                 top: 16,
-                bottom: 16,
+                bottom: 8,
                 right: 16,
               ),
               child: Container(
@@ -74,7 +74,7 @@ class _GenderSelectorState extends State<GenderSelector> {
                       selectedGender == "Mujer"
                           ? AppColors.backgroundComponentSelected
                           : AppColors.backgroundComponent,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(16),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(12.0),
