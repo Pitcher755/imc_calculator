@@ -8,7 +8,8 @@ class NumberSelector extends StatefulWidget {
   final Function() onIncrement;
   final Function() onDecrement;
 
-  const NumberSelector({super.key, 
+  const NumberSelector({
+  super.key, 
   required this.title,
   required this.value, 
   required this.onIncrement,
@@ -44,6 +45,7 @@ class _NumberSelectorState extends State<NumberSelector> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 FloatingActionButton(
+                  heroTag: null,
                   onPressed: () {
                     widget.onDecrement();
                   },
@@ -53,6 +55,7 @@ class _NumberSelectorState extends State<NumberSelector> {
                 ),
                 SizedBox(width: 16),
                 FloatingActionButton(
+                  heroTag: null,
                   onPressed: () {
                     widget.onIncrement();
                   },
